@@ -1,6 +1,6 @@
 # GitWebPage.github.io
 webページ
-A  github の issuesの使い方
+A  github の issuesの使い方<br>
    GithubPagesの作り方と活用方法
    githubのpull requestでLabelや Assigneeの使い方
    github のGistの使い方について
