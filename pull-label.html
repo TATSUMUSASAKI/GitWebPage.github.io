@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>githubのpull requestでLabelや Assigneeの使い方</title>
+<style>
+
+.table-ul {
+    position: fixed;
+     top: -16px;
+    left: -25px;
+    z-index: 2;
+  width: 100%;
+  transition: .3s;
+  background-color: #3ae;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+}
+.table-ul li {
+    height:50px;
+  border-right: 1px solid #fff;
+  display: table-cell;
+  vertical-align: middle;
+}
+.table-ul li:last-child {
+  border-right: 0;
+}
+.table-ul li a {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 0;
+}
+</style>
+</head>
+<body>
+    
+  <ul class = "table-ul">
+    <li><a href="Issues.html">GithubIssues</a></li>
+    <li><a href="GithubPages.html">GithubPages</a></li>
+    <li><a href="pull-label.html">Labelや Assigneeの使い方</a></li>
+    <li><a href="Gist.html">Gistの使い方について</a></li>
+    <li><a href="Milestones.html">Milestones の使い方</a></li>
+  </ul>
+
+<br><br>
+
+    <h1>Pull Requestとは？</h1><br>
+    <p>Pull Requestは、「編集リクエスト」のような機能です。<br>
+    こういう修正をしてみたけど、もし良ければ反映して下さい、というものです<br>
+    「branchにコミットした修正を元のbranchに反映できる」という機能を利用しています。<br></p>
+    <br>
+    <h1>一般的に使われるPull Requestの流れ</h1><br>
+    <p>一般的に使われるPull Requestの流れは次の通りです。<br>
+    1,自分が担当する実装用のbranchを作成する<br>
+    2,変更点をコミット<br>
+    3,そのbranchを元にPull Requestを作成する<br>
+    4,レビュアーはPull Reqeustを確認し、問題なければ元のブランチに反映(マージ)する<br>
+    </p>    
+    
+    <h1>PullRequestのLabelの意味</h1>
+    
+    <p>Pull Request時は内容に応じてlabelが付与されます。主な種類は以下の通りです。</p>
+    <br>
+    <table>
+  <tr><th>Label名</th><th></th></tr>
+  <tr><td>bug</td><td>不具合に関するPullRequestに付与されるラベル。
+<br>トリアージ後 bug:Critical, bug:High, bug:Middle, bug:low に分類される</td></tr>
+  <tr><td>discussion</td><td>実装方法や方針について意見を募集しているPullRequestに付与されます。</td></tr>
+  <tr><td>document</td><td>ドキュメント整備に関わるPullRequestに付与されます。</td></tr>
+  <tr><td>enhancement</td><td>機能強化、改善に関するPullRequestに付与されます。</td></tr>
+  <tr><td>experimental</td><td>正式に採用される前の試験的な実装についてのPullRequestに付与されます。</td></tr>
+  <tr><td>fix-me</td><td>追加での修正が必要なPullRequestに付与されます。</td></tr>
+<tr><td>ready-for-merge</td><td>マージ可能なPullRequestに付与されます。<br>
+ラベル付与後、数日たっても異論がなければマージされます。</td></tr>
+  <tr><td>template</td><td>フロントのデザインテンプレートのTwigやJS、CSSに変更のあるPullRequestに付与されます。</td></tr>
+</table>
+
+
+
+    <h1>担当者を明確にする「Assignee」機能</h1>
+    <p>Assignee（アサイニー）はIssueに担当者を割り当てる機能です。<br>
+        Issue画面のサイドバーにある[Assignee]という文字をクリックするとユーザーの選択画面が出てきます。<br>
+    Issueに担当者を割り当てるケースがさほど多くないためあまり使われない場合もありますが、Assigneeに指定することで、通知も逃さず受け取ることができます。<br>
+    Assigneeはもちろん途中で付け替えることもできます。そしてIssueの一覧画面ではアイコンが並ぶので、誰がどのくらいのタスクを抱えているかが一目で分かるようになります。<br>
+    しっかりとルールを決めて運用していきましょう。</p>
+
+     </body>
+</html>
