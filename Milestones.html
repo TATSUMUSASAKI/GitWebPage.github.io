@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>WebSample</title>
+<style>
+.table-ul {
+    position: fixed;
+     top: -16px;
+    left: -25px;
+    z-index: 2;
+  width: 100%;
+  transition: .3s;
+  background-color: #3ae;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+}
+.table-ul li {
+    height:50px;
+  border-right: 1px solid #fff;
+  display: table-cell;
+  vertical-align: middle;
+}
+.table-ul li:last-child {
+  border-right: 0;
+}
+.table-ul li a {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+</style>
+</head>
+<body>
+    
+  <ul class = "table-ul">
+    <li><a href="Issues.html">GithubIssues</a></li>
+    <li><a href="GithubPages.html">GithubPages</a></li>
+    <li><a href="pull-label.html">Labelや Assigneeの使い方</a></li>
+    <li><a href="Gist.html">Gistの使い方について</a></li>
+    <li><a href="Milestones.html">Milestones の使い方</a></li>
+  </ul>
+    <br>
+    <br>
+    <h1>マイルストーンについて</h1>
+    <p>「マイルストーン」（Milestones）は複数のイシュー（プルリクエスト）の進捗を追跡するための機能です。</p>
+    
+    <h1>マイルストーン管理ページを表示する</h1>
+    <p>マイルストーンの追加、編集、削除は、マイルストーン管理ページから実行できます。
+        イシュー（プルリクエスト）の一覧ページを表示し、「Milestones」をクリックします。</p>
+    
+    <h1>マイルストーンを作成する</h1>
+    <p>マイルストーンを追加するには「New milestone」をクリックします。<br>
+    マイルストーン作成ページが表示されます。「Title」にマイルストーンの名前を、「Description」にマイルストーンの説明を記入します。期限は右側のカレンダーを使用して選択できます。<br>
+    「Create milestone」をクリックすると、マイルストーンの作成できます。<br>
+    マイルストーン作成すると、マイルストーン管理ページが表示されます。</p>
+    
+    <h1>マイルストーンを割り当てる</h1>
+    <p>既存のイシュー（プルリクエスト）にマイルストーンを割り当てるには、対象のイシュー（プルリクエスト）のページを開きます。
+        サイドバーの「Milestones」またはその横の歯車アイコンをクリックし、割り当てたいマイルストーンをクリックします。<br>
+    マイルストーン管理ページに戻ると、割り当てているイシュー（プルリクエスト）が1件になっていることを確認できます。<br>
+    また、このページでは、進捗率を確認することもできます。現在、進行中のイシュー（プルリクエスト）が1件、クローズしたイシュー（プルリクエスト）が0件なので、進捗率は0％です。進行中のイシュー（プルリクエスト）1件を閉じると、進捗率は100%になります。<br>
+    マイルストーン管理ページでマイルストーンのタイトルをクリックすると、マイルストーンの個別ページを表示できます。マイルストーンを割り当てているイシュー（プルリクエスト）の一覧を確認できます。</p>
+    
+    <h1>マイルストーンを編集する</h1>
+    <p>再びマイルストーン管理ページでの操作に戻ります。
+        マイルストーンの設定を編集するには、対象マイルストーンの「Edit」をクリックします。<br>
+    マイルストーンを新規に追加したときと同じ要領で、名前の入力や期限の選択を行い「Save change」をクリックします。</p>
+    
+    <h1>マイルストーンを削除する</h1>
+    <p>マイルストーンを削除するには、対象マイルストーンの「Delete」をクリックします。<br>
+    確認メッセージが表示されます。「Delete this milestone」をクリックすると、マイルストーンの削除を実行できます。</p>
+    
+    <h1>マイルストーンが割り当てられているイシュー（プルリクエスト）の一覧を表示する</h1>
+    <p>最後に、特定のマイルストーンが割り当てられているイシュー（プルリクエスト）の一覧を表示する方法を紹介します。<br>
+    イシュー（プルリクエスト）をマイルストーンで絞り込むには、イシューの一覧ページで、「Milestones」をクリックし、リストのマイルストーンをクリックします。<br>
+    対象のマイルストーンが割り当てられているイシュー（プルリクエスト）だけ表示されるようになりました。</p>
+
+
+
+</body>
+</html>
