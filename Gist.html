@@ -5,7 +5,6 @@
 <title>WebSample</title>
 <link rel="stylesheet" href="./style.css">
 <style>
-
 .table-ul {
     position: fixed;
      top: -15px;
@@ -47,6 +46,47 @@
     <li><a href="Gist.html">Gistの使い方について</a></li>
     <li><a href="Milestones.html">Milestones の使い方</a></li>
   </ul>
+<br>
+<br>
+    <h1>Gist使い方</h1>
+    
+ <p>Gistはこのようなメモや短いコードをバージョン管理しながら公開するのに便利。
 
+     特にこのメモでは、画像を同一ディレクトリに置いて、 それGFMファイル内に挿入する方法を解説。</p>
+
+このメモにはgitコマンドの使い方の解説はない。 このメモは随時更新される予定。 Tipsなどのコメントを乞う。
+
+    <h1>gitコマンドで手もとにcloneできる</h1>
+    
+    <p>例えば git clone httpsgist.github.com9580883.git HowToGist もしくは git clone git@gist.github.com9580883.git HowToGist とすればHowToGistというディレクトリが作られ、 その中にHowToGist.mdなどいくつかのファイルと.gitディレクトリがcloneされる。</p>
+
+Gistのwebエディタ Ace はまだ日本語の編集に少し難があるので、Gistの文章は手もとで編集してgit pushするのが便利である。
+
+    <h1>１つのエントリーに複数のファイルを置くことができる</h1>
+<p>１つのエントリーには１つのディレクトリが割り当てられ、そこに複数のファイルを置くことができる。 複数のファイルの表示順序は現在はアルファベット順のようである。 （以前は ASCIIbetical order で あった。）</p>
+
+    <h1>.gitignoreはローカルだけに置く</h1>
+<p>Gistに.gitignoreを置くと見せたいファイルよりアルファベット順でで前にきてしまって、 .gitignoreが前面に出てきてしまう。 Gist用の.gitignoreはローカルだけに置くことにする。 その場合.gitignoreの中に.gitignoreも書く。 例えば httpsgist.github.comt-nissie9771048 のための.gitignoreはこんなかんじ
+
+.dSYM
+.log
+.o
+crd2enex
+science.crd
+science.enex
+.gitignore
+GitHub Flavored Markdown (GFM) で書かれたものはHTMLに変換されて表示される
+    このHowToGist.mdのように、 GitHub Flavored Markdown (GFM) で書かれたファイルはHTMLに変換されて表示される。 意味のあるファイル名を持ったGFMファイルが先頭に置かれてうまくHTML表示されるには、 ディレクトリ内のすべてのファイル名を工夫する必要がある。</p>
+
+    <h1>手もとでGFMファイルをHTMLファイルに変換するには次に挙げるようないくつかの方法がある。</h1>
+
+<p>Ruby Gemのgithub-markdownを用いる
+gfm2html.rb
+公式APIを使う
+gfm2html.sh
+Firefox add-on GFM Viewer
+    grip</p>
+    
+        
 </body>
 </html>
