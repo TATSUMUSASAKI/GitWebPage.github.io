@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>WebSample</title>
+<link rel="stylesheet" href="./style.css">
+<style>
+    
+
+</style>
+</head>
+<body>
+    
+  <ul class = "table-ul">
+    <li><a href="Issues.html">GithubIssues</a></li>
+    <li><a href="GithubPages.html">GithubPages</a></li>
+    <li><a href="pull-label.html">Labelや Assigneeの使い方</a></li>
+    <li><a href="Gist.html">Gistの使い方について</a></li>
+    <li><a href="Milestones.html">Milestones の使い方</a></li>
+  </ul>
+
+    <br>
+    <br>
+    
+    <h1>GitHub Pagesの作り方</h1>
+
+<h1>全体の流れ</h1>
+<p>1.GitHub Pagesの種類<br>
+2.リポジトリの作成（プロジェクト、ユーザー）<br>
+3.htmlを作成<br>
+4.GitHubへPush<br>
+5.確認</p>
+        
+<h1>1.GitHub Pagesの種類</h1>
+<p>ユーザーページ<br>
+プロジェクトページ<br>
+この２種類があります、どちらを選ぶかによって制作の仕方が違います。</p>
+
+<h1>2_1.リポジトリの作成　(プロジェクト)</h1>
+<p>ターミナルで下記を実行、ローカルのリポジトリを指定<br>
+$ cd /path/to/local-repository<br>
+<br>
+【リポジトリネーム】のブランチを制作<br>
+$ git branch 【リポジトリネーム】<br>
+<br>
+チェックアウトする<br>
+$ git checkout 【リポジトリネーム】<br>
+<br>
+プロジェクト用のリポジトリを制作</p>
+
+<h1>2_2.リポジトリの作成　(ユーザー)</h1>
+<p>ヘッダー、右にある【＋ボタン】をクリック、【New repository】をクリック<br>
+Repository nameに【GitHubアカウント名】.github.io と入力<br>
+緑の【Create repository】をクリック<br>
+<br>
+ここからローカルの作業です。<br>
+ターミナルを起動し、下記を実行して下さい。<br>
+$ git clone https://github.com/【GitHubアカウント名】/【GitHubアカウント名】.github.io<br>
+<br>
+実行することでローカルにファイルが生成されています。<br>
+ファイル名：【GitHubアカウント名】.github.io<br>
+<br>
+実行の指定先を移動します。<br>
+$ cd 【GitHubアカウント名】.github.io</p>
+
+<h1>3.htmlを作成</h1>
+<p>ターミナルで下記を実行し、ローカルにhtmlファイルを生成します。<br>
+$ echo "Hello world" > index.html<br>
+<br>
+下記を実行して、ファイルをGitHubにコミットします。<br>
+$ git add --all<br>
+$ git commit -m "First commit"</p>
+
+<h1>4.GitHubへPush</h1>
+<p>ブランチをプッシュ<br>
+<br>
+（プロジェクト）<br>
+$ git push -u origin【リポジトリネーム】<br>
+<br>
+（ユーザー）<br>
+$ git push -u origin master</p>
+
+<h1>5.確認</h1>
+    
+<p>プロジェクト<br>
+http://【ユーザーネーム】.github.io/【リポジトリネーム】<br>
+<br>
+ユーザー<br>
+http://【ユーザーネーム】.github.io</p>
+
+
+
+
+
+</body>
+</html>
