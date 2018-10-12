@@ -1,4 +1,9 @@
 @charset "utf-8";
+
+h1 {
+  background: linear-gradient(transparent 0, #00FFFF 0);
+  }
+
 h1{font-family: 'Yu Mincho', sans-serif;
 color:dodgerblue;}
     
@@ -39,3 +44,4 @@ background-color: #CCFFFF;
   padding: 10px 0;
 }
 }
+
