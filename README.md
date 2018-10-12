@@ -9,7 +9,7 @@ B  revert, reset などgitコマンド利用方法の使い方<br>
    github の pull requestにあるMilestones の使い方<br> 
    githubリポジトリのProjectsタブの活用について<br>
    githubリポジトリのWikiタブの活用について<br>
-   githubリポジトリのInsightsタブでの活動分析について<br>
+   githubリポジトリのInsightsタブでの活動分析について<br>　　
    github のemoticonやLTTMについて<br>
    GitHub と Slack を連携させる方法と利用事例について<br>
    ZenHub for GitHubの活用方法について<br><br>
